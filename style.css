@@ -51,3 +51,7 @@ body .about {background-color: (rgb 255,153,0) }
   font-weight: 600;
   font-size: 16px;
 }
+
+#carousel {
+  width:100%;
+}
