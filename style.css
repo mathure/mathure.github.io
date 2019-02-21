@@ -75,3 +75,32 @@ body .about {background-color: (rgb 255,153,0) }
 .progress {
   border-radius: 16px;
 }
+
+#categories:: after {
+  content: '';
+  background: black;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+.rowcategories {
+  margin-top: 40px;
+}
+
+.icon {
+  font-size: 20px;
+  margin: 20px auto;
+  padding: 20px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.categories .col-md-4:hover {
+  background: #007bff;
+  cursor: pointer;
+  transition: 0.7s;
+}
