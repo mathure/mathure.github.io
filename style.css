@@ -55,3 +55,23 @@ body .about {background-color: (rgb 255,153,0) }
 #carousel {
   width:100%;
 }
+
+#about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  color: #555;
+}
+
+#about btn {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  padding-top: 20px;
+}
+
+.progress {
+  border-radius: 16px;
+}
