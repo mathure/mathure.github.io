@@ -1,1 +1,53 @@
 body .about {background-color: (rgb 255,153,0) }
+
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo_end{
+  font-family: "Franklin Gothic";
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 26px;
+  color: rgb(255, 153, 0);
+}
+
+.logo_middle{
+  font-style: 'Lucida Handwriting'
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+}
+
+.navbar-nav li a {
+  float: right;
+  text-align: left;
+}
+
+#nav-bar ul li a:hover {
+   color: #007bff;
+}
+
+.nav-bar {
+  background: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.nav-link {
+  color: #555;
+  font-weight: 600;
+  font-size: 16px;
+}
