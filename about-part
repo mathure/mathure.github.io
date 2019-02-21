@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>About Shop for Good</title>
+      <link rel="stylesheet" type="text/css"
+      href="styles.css">
+  </head>
+
+  <body>
+     <h1>---</h1>
+     <div class="first">
+       <p><strong> Shop for Good </strong> is an organisation that promotes giving to charity through...</p>
+     </div>
+     
+
+  </body>
