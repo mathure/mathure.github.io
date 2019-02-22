@@ -1,12 +1,13 @@
-<<<<<<< HEAD
-#div2
 
-{font-family:"Franklin Gothic"; color:rgb(255,153,0);font-size: 50px;  }
+#div2 {
+  font-family:"Franklin Gothic";
+  color:rgb(255,153,0);
+  font-size: 50px;
+}
 
 #div3 {font-family: "Lucida Handwriting"; font-size: 28px;}
 #div4 {font-family:"Franklin Gothic"; color:rgb(255,153,0); font-size: 50px; }
 
-=======
 body .about {background-color: (rgb 255,153,0) }
 
 #nav-bar {
@@ -219,19 +220,15 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
 #footer {
   background: ##a6a6a6;
   color: #fff;
-  padding: 75px;
   height: 75px;
-
   width: 100%;
 }
 
 
  .socialmedia {
   position: absolute;
-  top: 100%;
-  transform: translateY(+1000%);
   width: 100%;
-  text-align: bottom ;
+  text-align: bottom;
 }
 
 .btn {
@@ -245,7 +242,6 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
   color: #3498db;
   overflow: hidden;
   position: relative;
-
 }
 
 .btn i {
@@ -290,14 +286,11 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
     top: -10%;
   }
 }
->>>>>>> 82c1a4a9599b9a33f7cb302ca4cf3cf06fed8f0e
-
-
 
 .border{
   padding: 25px;
-  background: blue;
+  background: lightgrey ;
   background-clip: border-box;
   border-style: solid;
-  border-color: coral;
+
 }
