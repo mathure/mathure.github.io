@@ -47,7 +47,7 @@
       <a class="nav-link" href="poll.html">Vote</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Contact Us</a>
+      <a class="nav-link" href="contactus.html">Contact Us</a>
     </li>
     <li class="nav-item">
     </li>
@@ -180,30 +180,7 @@
 
 
 
-          <div class="container">
-      <form id="contact" action="" method="post">
-        <h3>Quick Contact</h3>
-        <h4>Contact us today, and get reply with in 24 hours!</h4>
-        <fieldset>
-          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Your Email Address" type="email" tabindex="2" required>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
-        </fieldset>
-        <fieldset>
-          <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-        </fieldset>
-        <fieldset>
-          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-        </fieldset>
-      </form>
-    </div>
+          
     <section id='footer'>
         <div class='socialmedia rounded-circle'>
         <a class='btn' id='socialmediabtn' href='#'>
@@ -240,6 +217,36 @@
   <a class='btn' id='socialmediabtn' href='#'>
     <i class="fab fa-youtube"></i>
   </a>
+  <title>CodeClassChat</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <link rel="stylesheet" type="text/css" href="http://codeclasschat.herokuapp.com/bootstrap/css/bootstrap.css">
+ <link rel="stylesheet" type="text/css" href="http://codeclasschat.herokuapp.com/style.css">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+ <script src="http://codeclasschat.herokuapp.com/helpers.js"></script>
+
+ <script> jQuery(document).ready(function(){
+   $('.btn').click(function(){
+     var textarea_message = $('.new-message').val();
+     helpers.sendMessage(textarea_message);
+     $('.new-message').val('');
+   });
+   setInterval(function(){
+     helpers.fetchNewMessages(function(messages){
+       $.each(messages, function (i, message){
+         helpers.renderMessage(message);
+       });
+     //helpers.renderMessage()
+   });
+   }, 2000);
+ });
+ </script>
+
+
+</head>
+<body>
+ <textarea class="new-message"></textarea>
+ <input class="btn" type="submit"></input>
   </body>
 
 </html>
