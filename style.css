@@ -1,8 +1,11 @@
-
-.lead {text-align: center;}
-.abt  {text-align: center;}
 body .about {background-color: (rgb 255,153,0) }
+<<<<<<< HEAD
+#div2
 
+{font-family:"Franklin Gothic"; color:rgb(255,153,0);font-size: 50px;  }
+
+#div3 {font-family: "Lucida Handwriting"; font-size: 28px;}
+#div4 {font-family:"Franklin Gothic"; color:rgb(255,153,0); font-size: 50px; }
 #nav-bar {
   position: sticky;
   top: 0;
@@ -230,7 +233,7 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
 
 }
 
-.btn {
+#socialmediabtn {
   display: inline-block;
   width: 90px;
   height: 90px;
@@ -243,18 +246,18 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
   position: relative;
 }
 
-.btn i {
+#socialmediabtn i {
   line-height: 90px;
   font-size: 26px;
   transition: 0.2s linear;
 }
 
-.btn:hover i {
+#socialmediabtn:hover i {
   transform: scale(1.3);
   color: #f1f1f1;
 }
 
-.btn::before {
+#socialmediabtn::before {
   content: '';
   position: absolute;
   width: 120%;
@@ -265,7 +268,7 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
   top: 90%;
 }
 
-.btn:hover::before {
+#socialmediabtn:hover::before {
   animation: aaa 0.7s;
   top: -10%;
   left: -10%;
@@ -285,6 +288,68 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
     top: -10%;
   }
 }
+
+=======
+
+.row {
+  margin-top: 30px;
+}
+
+img {
+  width: 100%
+}
+
+.product-bottom .fa {
+    color: #28a745
+    font-size: 10px;
+}
+
+.product-bottom h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-bottom h5 {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.overlay {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 10%
+  margin-left: 0;
+  width: 70px;
+  padding-bottom: 10px;
+}
+
+.product-top:hover .overlay {
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+
+.overlay .fa {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  padding: 7px;
+  margin: 5%;
+  margin-bottom: 5%;
+}
+
+.overlay .btn-secondary {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+
+
+
+
 
 
 
