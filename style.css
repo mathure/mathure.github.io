@@ -1,10 +1,11 @@
 <<<<<<< HEAD
-#div2
 
-{font-family:"Franklin Gothic"; color:rgb(255,153,0);font-size: 50px;  }
 
-#div3 {font-family: "Lucida Handwriting"; font-size: 28px;}
-#div4 {font-family:"Franklin Gothic"; color:rgb(255,153,0); font-size: 50px; }
+
+
+
+.lead {text-align: center;}
+.abt  {text-align: center;}
 =======
 body .about {background-color: (rgb 255,153,0) }
 
@@ -16,7 +17,7 @@ body .about {background-color: (rgb 255,153,0) }
 
 .logo_end{
   font-family: "Franklin Gothic";
-  font-size: 24px;
+  font-size: 50px;
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
@@ -25,9 +26,9 @@ body .about {background-color: (rgb 255,153,0) }
 }
 
 .logo_middle{
-  font-style: 'Lucida Handwriting'
-  font-size: 24px;
-  font-style: normal;
+  font-family: "Freestyle Script";
+  font-size: 28px;
+  font-style:normal;
   font-variant: normal;
   font-weight: bold;
   line-height: 26px;
