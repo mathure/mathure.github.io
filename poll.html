@@ -8,18 +8,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-</head>
+    <script>
+function getVote(int) {
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+  </head>
 
-<<<<<<< HEAD
-<body >
-  <h1 class = "text-center"> <span id="div2">SHOP</span><span id="div3">for</span><span id="div4">GOOD</span>
-  <h1 class = "text-center" class="first"><strong>Who are we?</strong></h1>
-  <div class="text-center">
-
-=======
   <body>
     <section id='nav-bar'>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -60,52 +69,15 @@
   </ul>
 </div>
 </nav>
-   <h1 class="text-center"><u><strong>ABOUT SHOP FOR GOOD</strong></u></h1>
-  <h1 class = "text-center" class="first"><strong>Who are we?</strong></h1>
-    <div class="text-center">
->>>>>>> 269a93fffbcbafee14bace0721475ee1bc8fa698
-    <p class="lead"> Shop for Good is an organisation that promotes giving to charity through allowing users to purchasing various items and giving the profits to charities</p>
-  </div>
 
-
-     <div class = "text-center" id="mission">
-    <h2><small>Our mission</small><br />Help give to charity</h2>
-     <div>
-       <p>When you use our website, you help better and strengthen our society and our community</p>
-     </div>
-     </div>
-     <blockquote>
-    <p>We believe that when you offer a helping hand to others, you create opportunities to meet new people who believe in the same causes that inspire you</p>
-    <p>Our intention is to cause a chain reaction of helpfulness</p>
-  </blockquote>
-
-  <div class = "text-center" id="process">
-    <h2><small>The Process</small><br />What are the steps?</h2>
-    <div class="row">
-    <div class="col-sm-4">
-
-      <img class="img-circle" src='stepone.jpg' height="200" width="200">
-      <blockquote>
-      <p><i><strong>Step one</strong></i></p>
-      <p>We choose the appropriate items to sell to our clients.</p>
-    </blockquote>
-    </div>
-    <div class="col-sm-4">
-      <img class="img-circle" src='steptwo.png'height="200" width="200">
-      <p><i><strong>Step two</strong></i></p>
-      <blockquote>
-      <p>You purchase the item online, via our website.</p>
-    </blockquote>
-    </div>
-    <div class="col-sm-4">
-      <img class="img-circle" src='stepthree.jpg' height="200" width="200">
-      <p><i><strong>Step three</strong></i></p>
-      <blockquote>
-      <p>Your money goes towards a charity!</p>
-    </blockquote>
-    </div>
-  </div>
+<div id="poll">
+<h3>Do you like PHP and AJAX so far?</h3>
+<form>
+Yes:
+<input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+<br>No:
+<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+</form>
 </div>
-
-
   </body>
+</html>
