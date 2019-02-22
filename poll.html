@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Shop for Good</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <title>Shop for Change | Vote</title>
+
+    <script>
+function getVote(int) {
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+
+  </head>
+  <body>
+    <section id='nav-bar'>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="shop.html"><span class='logo_end'>Shop</span> <span class='logo_middle'>for </span> <span class='logo_end'>Good</span</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Shop</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="shop_groceries.html">Groceries</a>
+        <a class="dropdown-item" href="#">Household Items</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Fashion</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="About.html">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">This Month's Charity</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="poll.html">Vote</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact Us</a>
+    </li>
+    <li class="nav-item">
+    </li>
+  </ul>
+</div>
+</nav>
+
+  <div id="poll">
+    <h1>Who should we donate our profits to next month?</h1>
+    <form>
+      Make A Wish Foundation
+      <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+      <br> WWF
+      <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+    </form>
+  </div>
+  </body>
+</html>
