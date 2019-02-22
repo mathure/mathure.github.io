@@ -10,8 +10,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-    <title>Shop for Change | Vote</title>
-
     <script>
 function getVote(int) {
   if (window.XMLHttpRequest) {
@@ -29,8 +27,8 @@ function getVote(int) {
   xmlhttp.send();
 }
 </script>
-
   </head>
+
   <body>
     <section id='nav-bar'>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -72,14 +70,14 @@ function getVote(int) {
 </div>
 </nav>
 
-  <div id="poll">
-    <h1>Who should we donate our profits to next month?</h1>
-    <form>
-      Make A Wish Foundation
-      <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
-      <br> WWF
-      <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
-    </form>
-  </div>
+<div id="poll">
+<h3>Do you like PHP and AJAX so far?</h3>
+<form>
+Yes:
+<input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+<br>No:
+<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+</form>
+</div>
   </body>
 </html>
