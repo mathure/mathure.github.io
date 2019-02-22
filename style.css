@@ -1,13 +1,18 @@
-body .about {background-color: (rgb 255,153,0) }
-#div2 {font-family:"Franklin Gothic"; color:rgb(255,153,0);font-size: 50px;  }
+<<<<<<< HEAD
+#div2
+
+{font-family:"Franklin Gothic"; color:rgb(255,153,0);font-size: 50px;  }
+
 #div3 {font-family: "Lucida Handwriting"; font-size: 28px;}
 #div4 {font-family:"Franklin Gothic"; color:rgb(255,153,0); font-size: 50px; }
+
+=======
+body .about {background-color: (rgb 255,153,0) }
 
 #nav-bar {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: #fff;
 }
 
 .logo_end{
@@ -40,6 +45,10 @@ body .about {background-color: (rgb 255,153,0) }
 
 #nav-bar ul li a:hover {
    color: #007bff;
+}
+
+.nav-bar {
+  background: #fff;
 }
 
 .navbar-toggler {
@@ -216,15 +225,16 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
   width: 100%;
 }
 
-.socialmedia {
+
+ .socialmedia {
   position: absolute;
-  top: 50%;
-  transform: translateY(+1025%);
+  top: 100%;
+  transform: translateY(+1000%);
   width: 100%;
-  text-align: center;
+  text-align: bottom ;
 }
 
-#socialmediabtn {
+.btn {
   display: inline-block;
   width: 90px;
   height: 90px;
@@ -238,18 +248,18 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
 
 }
 
-#socialmediabtn i {
+.btn i {
   line-height: 90px;
   font-size: 26px;
   transition: 0.2s linear;
 }
 
-#socialmediabtn:hover i {
+.btn:hover i {
   transform: scale(1.3);
   color: #f1f1f1;
 }
 
-#socialmediabtn::before {
+.btn::before {
   content: '';
   position: absolute;
   width: 120%;
@@ -260,7 +270,7 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
   top: 90%;
 }
 
-#socialmediabtn:hover::before {
+.btn:hover::before {
   animation: aaa 0.7s;
   top: -10%;
   left: -10%;
@@ -280,32 +290,9 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
     top: -10%;
   }
 }
+>>>>>>> 82c1a4a9599b9a33f7cb302ca4cf3cf06fed8f0e
+
 <<<<<<< HEAD
-
-.container {
-  width: 100%;
-  margin-top: 10%;
-  font-family: sans-serif;
-  letter-spacing: 1px;
-}
-
-.container h2 {
-  background: #0062cc;
-  color: #fff;
-  width: 200px;
-  font-size: 24px;
-  padding: 5px;
-  height: 40px;
-}
-
-.container::after {
-  content:'';
-  border-right: 40px solid transparent;
-  position: relative;
-  left: 48px;
-  top: 34px;
-}
-
 .row {
   margin-top: 30px;
 }
@@ -362,11 +349,14 @@ img {
   border: none;
   box-shadow: none;
 =======
+=======
+>>>>>>> 539979f4625b9897c6a1d8c11b3929953ee4f2d1
 
 
-#categories{
- padding: 25px;
- background: lightgrey;
- background-clip: border-box;
->>>>>>> c13ce33dfdb098b6ac4fcce8896c28611d3be9cc
+.border{
+  padding: 25px;
+  background: blue;
+  background-clip: border-box;
+  border-style: solid;
+  border-color: coral;
 }
