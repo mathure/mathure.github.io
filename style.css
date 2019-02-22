@@ -335,7 +335,8 @@ img {
   position: absolute;
   top: 10%
   margin-left: 0;
-  width: 7px;
+  width: 70px;
+  padding-bottom: 10px;
 }
 
 .product-top:hover .overlay {
@@ -356,7 +357,7 @@ img {
   margin-bottom: 5%;
 }
 
-.overlay .fa {
+.overlay .btn-secondary {
   background: transparent;
   border: none;
   box-shadow: none;
