@@ -8,14 +8,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"><span class='logo_end'>SHOP</span> <span class='logo_middle'>for</span> <span class='logo_end'>GOOD</span></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-  </button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+</head>
+
+  <body>
+    <section id='nav-bar'>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="shop.html"><span class='logo_end'>Shop</span> <span class='logo_middle'>for </span> <span class='logo_end'>Good</span</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav ml-auto">
     <li class="nav-item active">
       <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
@@ -40,18 +47,40 @@
       <a class="nav-link" href="poll.html">Vote</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Contact Us</a>
+      <a class="nav-link" href="contactus.html">Contact Us</a>
     </li>
     <li class="nav-item">
     </li>
     <li class='nav-item' id='shopping-cart'>
-      <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      <i class="fas fa-shopping-cart"></i>
     </li>
   </ul>
-  </div>
-  </nav>
-
-  <body> <class="text-center">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEtnJhVY-4q83rl5xxtwXTQGsPdBPOYBNWWkve6RNQaIcqrw/viewform?embedded=true" width="640" height="445" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
+</div>
+</nav>
+</body>
 </html>
+
+<div class="container">
+<form id="contact" action="" method="post">
+<h3>Quick Contact</h3>
+<h4>Contact us today, and get reply with in 24 hours!</h4>
+<fieldset>
+<input placeholder="Your name" type="text" tabindex="1" required autofocus>
+</fieldset>
+<fieldset>
+<input placeholder="Your Email Address" type="email" tabindex="2" required>
+</fieldset>
+<fieldset>
+<input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+</fieldset>
+<fieldset>
+<input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+</fieldset>
+<fieldset>
+<textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+</fieldset>
+<fieldset>
+<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+</fieldset>
+</form>
+</div>

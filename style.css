@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body .about {background-color: (rgb 255,153,0) }
 <<<<<<< HEAD
 #div2
@@ -7,13 +6,6 @@ body .about {background-color: (rgb 255,153,0) }
 
 #div3 {font-family: "Lucida Handwriting"; font-size: 28px;}
 #div4 {font-family:"Franklin Gothic"; color:rgb(255,153,0); font-size: 50px; }
-=======
-
-.lead {text-align: center;}
-.abt  {text-align: center;}
-body .about {background-color: (rgb 255,153,0) }
-
->>>>>>> 5a54ac7a5cfc1ca71cda2408768d1a683f649884
 #nav-bar {
   position: sticky;
   top: 0;
@@ -233,7 +225,6 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
   position: absolute;
 
   top: 100%;
-
   width: 100%;
   text-align: bottom ;
 
@@ -297,8 +288,9 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
     top: -10%;
   }
 }
-<<<<<<< HEAD
->>>>>>> 82c1a4a9599b9a33f7cb302ca4cf3cf06fed8f0e
+
+=======
+
 .row {
   margin-top: 30px;
 }
@@ -321,10 +313,6 @@ img {
   font-size: 15px;
   padding-bottom: 10px;
 }
-=======
-<<<<<<< HEAD
-
->>>>>>> 5a54ac7a5cfc1ca71cda2408768d1a683f649884
 
 .overlay {
   display: block;
@@ -359,18 +347,10 @@ img {
   border: none;
   box-shadow: none;
 
-<<<<<<< HEAD
-
-=======
-=======
->>>>>>> 539979f4625b9897c6a1d8c11b3929953ee4f2d1
 
 
-.border{
-  padding: 25px;
-  background: blue;
-  background-clip: border-box;
-  border-style: solid;
+
+
 
 
 .border{
