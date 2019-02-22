@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body .about {background-color: (rgb 255,153,0) }
 <<<<<<< HEAD
 #div2
@@ -6,6 +7,13 @@ body .about {background-color: (rgb 255,153,0) }
 
 #div3 {font-family: "Lucida Handwriting"; font-size: 28px;}
 #div4 {font-family:"Franklin Gothic"; color:rgb(255,153,0); font-size: 50px; }
+=======
+
+.lead {text-align: center;}
+.abt  {text-align: center;}
+body .about {background-color: (rgb 255,153,0) }
+
+>>>>>>> 5a54ac7a5cfc1ca71cda2408768d1a683f649884
 #nav-bar {
   position: sticky;
   top: 0;
@@ -14,7 +22,7 @@ body .about {background-color: (rgb 255,153,0) }
 
 .logo_end{
   font-family: "Franklin Gothic";
-  font-size: 24px;
+  font-size: 50px;
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
@@ -23,9 +31,9 @@ body .about {background-color: (rgb 255,153,0) }
 }
 
 .logo_middle{
-  font-style: 'Lucida Handwriting'
-  font-size: 24px;
-  font-style: normal;
+  font-family: "Freestyle Script";
+  font-size: 28px;
+  font-style:normal;
   font-variant: normal;
   font-weight: bold;
   line-height: 26px;
@@ -216,19 +224,22 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
 #footer {
   background: ##a6a6a6;
   color: #fff;
-  padding: 75px;
   height: 75px;
-
   width: 100%;
 }
 
 
  .socialmedia {
   position: absolute;
+
   top: 100%;
-  transform: translateY(+1000%);
+
   width: 100%;
   text-align: bottom ;
+
+  width: 100%;
+  text-align: bottom;
+
 }
 
 #socialmediabtn {
@@ -242,7 +253,6 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
   color: #3498db;
   overflow: hidden;
   position: relative;
-
 }
 
 #socialmediabtn i {
@@ -287,6 +297,7 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
     top: -10%;
   }
 }
+<<<<<<< HEAD
 >>>>>>> 82c1a4a9599b9a33f7cb302ca4cf3cf06fed8f0e
 .row {
   margin-top: 30px;
@@ -310,6 +321,10 @@ img {
   font-size: 15px;
   padding-bottom: 10px;
 }
+=======
+<<<<<<< HEAD
+
+>>>>>>> 5a54ac7a5cfc1ca71cda2408768d1a683f649884
 
 .overlay {
   display: block;
@@ -356,5 +371,13 @@ img {
   background: blue;
   background-clip: border-box;
   border-style: solid;
-  border-color: coral;
+
+
+.border{
+  padding: 25px;
+  background: Goldenrod;
+  background-clip: border-box;
+  border-style: solid;
+
+
 }
