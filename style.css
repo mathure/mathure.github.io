@@ -1,6 +1,6 @@
+
+
 <<<<<<< HEAD
-
-
 
 
 
@@ -225,12 +225,13 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
   width: 100%;
 }
 
-.socialmedia {
+
+ .socialmedia {
   position: absolute;
-  top: 50%;
-  transform: translateY(+1025%);
+  top: 100%;
+  transform: translateY(+1000%);
   width: 100%;
-  text-align: center;
+  text-align: bottom ;
 }
 
 .btn {
@@ -290,3 +291,13 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
   }
 }
 >>>>>>> 82c1a4a9599b9a33f7cb302ca4cf3cf06fed8f0e
+
+
+
+.border{
+  padding: 25px;
+  background: blue;
+  background-clip: border-box;
+  border-style: solid;
+  border-color: coral;
+}
