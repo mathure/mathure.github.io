@@ -1,17 +1,13 @@
-<<<<<<< HEAD
-#div2
-
-{font-family:"Franklin Gothic"; color:rgb(255,153,0);font-size: 50px;  }
-
+body .about {background-color: (rgb 255,153,0) }
+#div2 {font-family:"Franklin Gothic"; color:rgb(255,153,0);font-size: 50px;  }
 #div3 {font-family: "Lucida Handwriting"; font-size: 28px;}
 #div4 {font-family:"Franklin Gothic"; color:rgb(255,153,0); font-size: 50px; }
-=======
-body .about {background-color: (rgb 255,153,0) }
 
 #nav-bar {
   position: sticky;
   top: 0;
   z-index: 10;
+  background: #fff;
 }
 
 .logo_end{
@@ -44,10 +40,6 @@ body .about {background-color: (rgb 255,153,0) }
 
 #nav-bar ul li a:hover {
    color: #007bff;
-}
-
-.nav-bar {
-  background: #fff;
 }
 
 .navbar-toggler {
@@ -288,6 +280,7 @@ contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 
     top: -10%;
   }
 }
+<<<<<<< HEAD
 
 .container {
   width: 100%;
@@ -367,4 +360,12 @@ img {
   background: transparent;
   border: none;
   box-shadow: none;
+=======
+
+
+#categories{
+ padding: 25px;
+ background: lightgrey;
+ background-clip: border-box;
+>>>>>>> c13ce33dfdb098b6ac4fcce8896c28611d3be9cc
 }
