@@ -34,7 +34,7 @@ a {
     position: relative;
     color: transparent;
     animation: text 0.5s ease forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 }
 
 #intro h1 span {
@@ -42,10 +42,26 @@ a {
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 0%;
     background-color: black;
     animation: text_reveal 1s ease;
+    animation-delay: 0.3s;
+}
+
+#intro h1:nth-child(1) {
     animation-delay: 1s;
+}
+
+#intro h1:nth-child(2) {
+    animation-delay: 2s;
+}
+
+#intro h1:nth-child(1) span {
+    animation-delay: 0.5s;
+}
+
+#intro h1:nth-child(2) span {
+    animation-delay: 1.5s;
 }
 
 #intro .cta {
@@ -67,6 +83,13 @@ a {
     background-color: black;
 }
 
+#intro .intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
 @keyframes text_reveal {
     50% {
         width: 100%;
@@ -84,3 +107,4 @@ a {
         color: white;
     }
 }
+
