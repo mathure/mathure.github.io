@@ -90,6 +90,48 @@ a {
     justify-content: flex-start;
 }
 
+/* Work Experience Section */
+#workexperience {}
+#workexperience .workexperience {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#workexperience .section_name {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#workexperience .workexperience_heading p {
+    font-size: 1.5rem;
+    margin: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
+#workexperience .workexperience_detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#workexperience .event {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
 @keyframes text_reveal {
     50% {
         width: 100%;
@@ -107,4 +149,5 @@ a {
         color: white;
     }
 }
+
 
