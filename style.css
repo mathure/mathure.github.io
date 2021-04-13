@@ -22,6 +22,12 @@ a {
     justify-content: center;
 }
 
+p {
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.9rem;
+    font-weight: 300;
+}
 /* Intro Section */
 #intro {
     background-color: blanchedalmond;
@@ -108,21 +114,20 @@ a {
     text-transform: uppercase;
 }
 
-#workexperience .workexperience_heading p {
-    font-size: 1.5rem;
-    margin: 5px;
-    line-height: 2.5rem;
-    font-weight: 300;
-    letter-spacing: .05rem;
-}
-
 #workexperience .workexperience_detail {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
+#workexperience .workexperience_heading p {
+    letter-spacing: .05rem;
+    margin: 5px;
+    line-height: 2.5rem;
+    text-align: center;
+}
 #workexperience .event {
     flex-basis: 80%;
     display: flex;
@@ -130,6 +135,21 @@ a {
     justify-content: center;
     flex-direction: column;
     padding: 30px;
+}
+
+#workexperience .event::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#workexperience .event h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 @keyframes text_reveal {
@@ -149,5 +169,3 @@ a {
         color: white;
     }
 }
-
-
