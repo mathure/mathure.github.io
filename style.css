@@ -37,6 +37,14 @@ a {
     animation-delay: 1s;
 }
 
+#intro h1:nth-child(1) {
+    animation-delay: 1s;
+}
+
+#intro h1:nth-child(2) {
+    animation-delay: 2s;
+}
+
 #intro h1 span {
     position: absolute;
     top: 0;
@@ -46,14 +54,6 @@ a {
     background-color: black;
     animation: text_reveal 1s ease;
     animation-delay: 0.3s;
-}
-
-#intro h1:nth-child(1) {
-    animation-delay: 1s;
-}
-
-#intro h1:nth-child(2) {
-    animation-delay: 2s;
 }
 
 #intro h1:nth-child(1) span {
